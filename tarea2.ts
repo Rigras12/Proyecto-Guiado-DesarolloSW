@@ -25,7 +25,6 @@ varTipoDesconocido=2.8;
 console.log(`varibale tiene valor : ${varTipoDesconocido} y es te tipo ${typeof(varTipoDesconocido)}`);
 
 let varTipoIndefinido : undefined;
-varTipoIndefinido=null;
 
 let varVoid:void=undefined;
 console.log(`variable tiene valor: ${varVoid} y es de tipo ${typeof(varVoid)}`);

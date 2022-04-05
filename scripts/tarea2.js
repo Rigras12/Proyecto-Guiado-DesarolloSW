@@ -1,3 +1,4 @@
+"use strict";
 //Tarea 2
 var op1 = 10;
 var op2 = 15;
@@ -15,7 +16,6 @@ console.log("varibale tiene valor : ".concat(varTipoDesconocido, " y es te tipo 
 varTipoDesconocido = 2.8;
 console.log("varibale tiene valor : ".concat(varTipoDesconocido, " y es te tipo ").concat(typeof (varTipoDesconocido)));
 var varTipoIndefinido;
-varTipoIndefinido = null;
 var varVoid = undefined;
 console.log("variable tiene valor: ".concat(varVoid, " y es de tipo ").concat(typeof (varVoid)));
 function imprimirMensaje() {
