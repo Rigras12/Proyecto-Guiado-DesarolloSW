@@ -1,20 +1,17 @@
-"use strict";
-exports.__esModule = true;
-exports.Aprendiz = exports.NivelEducativo = void 0;
-var NivelEducativo;
+export var NivelEducativo;
 (function (NivelEducativo) {
     NivelEducativo["BACHILLERATO"] = "Bachillerato";
     NivelEducativo["UNIVERSITARIO"] = "Universitario";
     NivelEducativo["POSGRADO"] = "Posgrado";
-})(NivelEducativo = exports.NivelEducativo || (exports.NivelEducativo = {}));
+})(NivelEducativo || (NivelEducativo = {}));
 var Aprendiz = /** @class */ (function () {
-    function Aprendiz(nombres, apellidos, avatar, edad, nivelEducativo) {
+    function Aprendiz(nombres, apellidos, avarPath, edad, nivelEducativo) {
         this.nombres = nombres;
         this.apellidos = apellidos;
-        this.avatar = avatar;
+        this.avarPath = avarPath;
         this.edad = edad;
         this.nivelEducativo = nivelEducativo;
     }
     return Aprendiz;
 }());
-exports.Aprendiz = Aprendiz;
+export { Aprendiz };
