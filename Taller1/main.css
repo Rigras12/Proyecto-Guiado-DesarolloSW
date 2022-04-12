@@ -1,0 +1,18 @@
+#titulo{
+    background-color: rgb(17, 116, 166);
+    padding: 5px;
+    
+}
+
+#tabla{
+    margin-left: 10%;
+    margin-right: 30%;
+    margin-top: 4%;
+}
+
+tbody{
+    background-color: rgb(233, 233, 233);
+}
+#bold{
+    font-weight: bold;
+}
