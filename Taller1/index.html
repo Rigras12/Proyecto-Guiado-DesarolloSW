@@ -16,22 +16,40 @@
     <script type="module" src="./scripts/main.js"></script>
 </head>
 <body>
+
     <div id="titulo"> 
         <img src="https://seeklogo.com/images/Y/youtube-tv-shows-logo-16EB8B9C93-seeklogo.com.png" width="40" height="40">
         TV Series
     </div>
-    <div id="tabla">
-        <table class="table table-hover" id="series">
-            <thead id="bold">
+    <div id="contenido">
+        <table id="tablaGeneral">
                 <tr>
-                    <th>#</th>
-                    <th>Name</th>
-                    <th>Channel</th>
-                    <th>Seasons</th>  
+                    <td style="width : 50%">
+                        <div id="tabla1">
+                            <table class="table table-hover" id="series">
+                                <thead id="bold">
+                                    <tr>
+                                        <th>#</th>
+                                        <th>Name</th>
+                                        <th>Channel</th>
+                                        <th>Seasons</th>  
+                                    </tr>
+                                </thead>
+                                <tbody id="tbody1">
+                                </tbody>
+                            </table>
+                        </div>
+                    </td>
+                    <td style="width : 50%">
+                        <div class="card" id="card">
+                        </div>
+                    </td>
                 </tr>
-            </thead>
+
         </table>
     </div>
+    
+
 
     
 </body>

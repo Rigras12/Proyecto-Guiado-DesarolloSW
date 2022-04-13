@@ -1,18 +1,23 @@
 import { series } from "./data.js";
 console.log(series);
-var seriesTable = document.getElementById("series");
-var divBody = document.getElementById("tabla");
+var seriesTable = document.getElementById("tbody1");
+var divBody = document.getElementById("tabla1");
 mostrarSeries(series);
 mostrarPromedio(series);
 function mostrarSeries(seriesx) {
-    var seriesBody = document.createElement("tbody");
-    for (var _i = 0, seriesx_1 = seriesx; _i < seriesx_1.length; _i++) {
-        var seriex = seriesx_1[_i];
+    var _loop_1 = function (seriex) {
         var trElement = document.createElement("tr");
         trElement.innerHTML = "<td id=\"bold\">".concat(seriex.numero, "</td>\n        <td> <a href=\"").concat(seriex.paginaWeb, "\">").concat(seriex.nombre, "</a> </td>\n        <td> ").concat(seriex.canal, " </td>\n        <td> ").concat(seriex.seasons, " </td>");
-        seriesBody.appendChild(trElement);
+        trElement.onclick = function () {
+            var card = document.getElementById("card");
+            card.innerHTML = "<img src=\"".concat(seriex.urlFoto, "\" alt=\"").concat(seriex.nombre, "\" width=\"100\" height =\"100\">\n            <div style=\"margin-left:4%\">\n            <p>").concat(seriex.nombre, "</p>\n            <p>").concat(seriex.descripcion, "</p>\n            <a href=\"").concat(seriex.paginaWeb, "\">").concat(seriex.paginaWeb, "</a>\n            </div>");
+        };
+        seriesTable.appendChild(trElement);
+    };
+    for (var _i = 0, seriesx_1 = seriesx; _i < seriesx_1.length; _i++) {
+        var seriex = seriesx_1[_i];
+        _loop_1(seriex);
     }
-    seriesTable.appendChild(seriesBody);
 }
 function mostrarPromedio(seriesx) {
     var seriesPromedio = document.createElement("p");

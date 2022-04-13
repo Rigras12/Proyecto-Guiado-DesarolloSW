@@ -4,15 +4,29 @@
     
 }
 
-#tabla{
-    margin-left: 10%;
-    margin-right: 30%;
-    margin-top: 4%;
+#tabla1{
+    margin-left: 5%;
+    margin-right: 5%;
+    
+
 }
 
-tbody{
+#tbody1{
     background-color: rgb(233, 233, 233);
 }
 #bold{
     font-weight: bold;
+}
+
+#tablaGeneral{
+    margin-top: 5%;
+    width: 100%;
+    align-content: top;
+
+}
+#card{
+    align-content: left;
+    width: 50%;
+
+    margin-right: 2%;
 }
